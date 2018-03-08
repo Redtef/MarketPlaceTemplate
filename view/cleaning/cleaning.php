@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
+    <!DOCTYPE html>
+    <html lang="fr">
 
     <head>
 
@@ -20,231 +20,286 @@
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-          <![endif]-->
+            <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
 
-    </head>
+        </head>
 
-    <body style="background-color: #ebebeb;">
+        <body style="background-color: #ebebeb;">
 
-        <!-- Top menu -->
+            <!-- Top menu -->
 
-        <?php 
-       include_once '../menu/navbar.html';
-       ?>
+            <?php 
+            include_once '../menu/navbar.html';
+            ?>
 
-        <header style=" padding-top: 4rem;padding-bottom: 0rem;">
+            <header style=" padding-top: 4rem;padding-bottom: 0rem;">
 
-            <div class="container">
-                <div class="row">
+                <div class="container">
+                    <div class="row">
 
-                    <div class="col-xl-12 text-center">
-                        <!--style="-webkit-text-stroke:1px black; font-family: "Times New Roman", Times, serif;"-->
-                        <h1 class="mb-1">Reservez le meilleur entretien maison</h1>
-                        <h4></h4>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Top content -->
-        <div class="top-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 form-box">
-                        <form role="form" action="" method="post" class="f1">
-                            <fieldset>
-                                <p >Remplissez ce formulaire pour reserver une femme de menage professionel</p>
-                                <div class="form-group ">
-                                    <h5>Combien de femme de menages?</h5>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                                <div class="form-group ">
-                                    <h5>Pour combien de temps</h5>
-                                    <select id="inputState" class="form-control">
-                                        <option selected="">2 heure</option>
-                                        <option>3 heure</option>
-                                        <option>4 heure</option>
-                                        <option>5 heure</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <h5>Pour combien de jours ?</h5>
-                                    <button type="button" class="btn active">Chaque semaine</button>
-                                    <button type="button" class="btn active">Une fois</button>
-                                </div>
-
-
-
-                                <div class="form-group">
-                                    <h5>Avez-vous du matériel de nettoyage? </h5>
-                                    <button type="button" class="btn active">Non(+xxDH)</button>
-                                    <button type="button" class="btn active">Oui</button>
-                                </div>
-                                
-                                
-                                <div class="f1-buttons">
-                                    <button type="button" class="btn btn-next">Choix du temps</button>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <p >Timing et instructions speciales</p>
-
-
-                                <div class="form-group">
-                                    <h5><i class="fas fa-calendar-alt"></i> Date et temps </h5>
-                                    <input type="text" name="f1-email" class="f1-email form-control" id="datetimepicker">
-                                </div>
-
-                                <div class="form-group">
-                                    <h5>Details ou instruction special ?</h5>
-                                    <textarea name="f1-about-yourself" placeholder="Example: the keys are under the door mate ..." 
-                                              class="form-control" id="f1-about-yourself" rows="8"></textarea>
-                                </div>
-                                <div class="f1-buttons">
-                                    <button type="button" class="btn btn-next">Vos informations</button>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <h3>Vos details et location</h3>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <h5>Votre email </h5>
-                                            <input type="text" name="f1-email" placeholder="ex:abcd@email.com" class="f1-email form-control" id="f1-email">
-                                        </div><div class="form-group">
-                                            <h5>Votre prenom </h5>
-                                            <input type="text" name="f1-name" placeholder="ex:yassine" class="f1-name form-control" id="f1-name">
-                                        </div>
-                                        <button type="button" class="btn btn-previous">Precedant</button>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <h5>Numero de telephone </h5>
-                                            <input type="text" name="f1-number" placeholder="ex:0601020304" class="f1-number form-control" id="f1-number">
-                                        </div>
-                                        <div class="form-group">
-                                            <h5>Votre nom </h5>
-                                            <input type="text" name="f1-lastname" placeholder="ex:simou" class="f1-lastname form-control" id="f1-lastname">
-                                        </div>
-                                        <button type="button" class="btn btn-next">Confirmer</button>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <h3> Votre Demande est passer avec Succes</h3>
-                                <hr>
-                                <h5> Thank you for submitting your moving request on ServiceMarket. Your reference number is # 20180221000053DRDXB.</h5>
-                                <h6>
-                                    We will share your request with our partners and you will be notified when they provide a quote or request a survey. We might contact you as well if we need to understand your request better.
-
-                                    In the meantime, feel free to call or email us if you need to modify your request.
-                                </h6>
-                                <hr><hr><h5>
-                                    If you need any assistance, you can reach us on +212 524 454 565 between 8.00AM and 8.00PM on weekdays and between 9.00AM and 6.00PM on Fridays. Alternatively you can email us on htakouit@gmail.com. We're here to help!</h5>
-                                <hr>
-
-                            </fieldset>
-
-
-                        </form>
-                    </div>
-
-
-                    <div class="col-sm-4 form-box h-50">
-                        <div class="h-100">
-                            <h4 class="card-header bg-primary text-white">Resumé de votre demande</h4>
-
-                            <div class="card" >
-                                <div class="card-block">
-                                    <h5 class="card-title">Service</h5>
-                                    <p class="card-text">Maintenance et reparation climatiseur</p>
-                                </div>
-                            </div>
-
-                            <div class="card text-center" >
-                                <div class="card-block">
-                                    <h5 class="card-title">Pack</h5>
-                                    <p class="card-text">hna ghaykon lpack li tkhtar</p>
-                                </div>
-                            </div>
-
-                            <div class="card text-left" style="padding-left: 10px;" >
-                                <div class="card-block">
-                                    <h5 class="card-title">Inclus:</h5>
-                                    <p class="card-text">+Filter Cleaning <br>+ Vent cleaning <br>+water tray cleaning<br>+Drain pipe flushing<br>+Gas refill</p>
-                                </div>
-                            </div>
-
-                            <div class="pricing">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            Sous total:
-                                        </div>
-                                        <div class="col-sm-6">
-                                            1542DH
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            TOTAL
-                                        </div>
-                                        <div class="col-sm-6">
-                                            1600DH
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="col-xl-12 text-center">
+                            <!--style="-webkit-text-stroke:1px black; font-family: "Times New Roman", Times, serif;"-->
+                            <h1 class="mb-1">Reservez le meilleur entretien maison</h1>
+                            <h4></h4>
+                            <hr>
                         </div>
                     </div>
+                </div>
+            </header>
 
+            <!-- Top content -->
+            <div class="top-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 form-box">
+                            <form role="form" action="" method="post" class="f1">
+                                <fieldset>
+                                    <p >Remplissez ce formulaire pour reserver une femme de menage professionel</p>
+                                    <div class="form-group ">
+                                        <h5>Combien de femme de menages?</h5>
+                                        <select id="inputState" class="form-control">
+                                            <option selected="">1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <h5>Pour combien de temps</h5>
+                                        <select id="inputState" class="form-control">
+                                            <option selected="">2 heure</option>
+                                            <option>3 heure</option>
+                                            <option>4 heure</option>
+                                            <option>5 heure</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Pour combien de jours ?</h5>
+                                        <button type="button" class="btn active">Une fois</button>
+                                        <button type="button" class="btn active" data-toggle="modal" data-target="#myModal">Plusieurs fois</button>
+                                    </div>
 
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Selectionner les dates</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row" style="margin-top: 20px">
+                                                <div class="col-sm-4">
+                                                    <input style="height: 40px" placeholder="Choisissez un temps" type="text" name="f1-email" class="form-control" id="datetimepicker">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select style="height: 40px"  id="inputState" class="form-control">
+                                            <option selected="">2 heure</option>
+                                            <option>3 heure</option>
+                                            <option>4 heure</option>
+                                            <option>5 heure</option>
+                                        </select>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                 <button style="height: 40px" type="button" class="btn">Ajouter</button>
+                                             </div>
+                                         </div>
+                                         <div class="row" style="margin-top: 20px">
+                                            <div class="col-sm-12">
+                                            
+                                            <table id="datesTable" style="width:100%">
+                                              <tr>
+                                                <th style="width: 300px">Date</th>
+                                                <th>Nombre Heure</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2018/03/08 15:00</td>
+                                                <td>2 heure</td>
+                                                <td><button style="width: 50px" type="button" class="btn">Supprimer</button></td>
+                                            </tr>
+                                            
+                                        </table> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+
+
+                <div class="form-group">
+                    <h5>Avez-vous du matériel de nettoyage? </h5>
+                    <button type="button" class="btn active">Non(+xxDH)</button>
+                    <button type="button" class="btn active">Oui</button>
+                </div>
+
+
+                <div class="f1-buttons">
+                    <button type="button" class="btn btn-next">Choix du temps</button>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <p >Timing et instructions speciales</p>
+
+
+                <div class="form-group">
+                    <h5><i class="fas fa-calendar-alt"></i> Date et temps </h5>
+                    <input type="text" name="f1-email" class="f1-email form-control" id="datetimepicker">
+                </div>
+
+                <div class="form-group">
+                    <h5>Details ou instruction special ?</h5>
+                    <textarea name="f1-about-yourself" placeholder="Example: the keys are under the door mate ..." 
+                    class="form-control" id="f1-about-yourself" rows="8"></textarea>
+                </div>
+                <div class="f1-buttons">
+                    <button type="button" class="btn btn-next">Vos informations</button>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Vos details et location</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <h5>Votre email </h5>
+                            <input type="text" name="f1-email" placeholder="ex:abcd@email.com" class="f1-email form-control" id="f1-email">
+                        </div><div class="form-group">
+                            <h5>Votre prenom </h5>
+                            <input type="text" name="f1-name" placeholder="ex:yassine" class="f1-name form-control" id="f1-name">
+                        </div>
+                        <button type="button" class="btn btn-previous">Precedant</button>
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <h5>Numero de telephone </h5>
+                            <input type="text" name="f1-number" placeholder="ex:0601020304" class="f1-number form-control" id="f1-number">
+                        </div>
+                        <div class="form-group">
+                            <h5>Votre nom </h5>
+                            <input type="text" name="f1-lastname" placeholder="ex:simou" class="f1-lastname form-control" id="f1-lastname">
+                        </div>
+                        <button type="button" class="btn btn-next">Confirmer</button>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3> Votre Demande est passer avec Succes</h3>
+                <hr>
+                <h5> Thank you for submitting your moving request on ServiceMarket. Your reference number is # 20180221000053DRDXB.</h5>
+                <h6>
+                    We will share your request with our partners and you will be notified when they provide a quote or request a survey. We might contact you as well if we need to understand your request better.
+
+                    In the meantime, feel free to call or email us if you need to modify your request.
+                </h6>
+                <hr><hr><h5>
+                If you need any assistance, you can reach us on +212 524 454 565 between 8.00AM and 8.00PM on weekdays and between 9.00AM and 6.00PM on Fridays. Alternatively you can email us on htakouit@gmail.com. We're here to help!</h5>
+                <hr>
+
+            </fieldset>
+
+
+        </form>
+    </div>
+
+
+    <div class="col-sm-4 form-box h-50">
+        <div class="h-100">
+            <h4 class="card-header bg-primary text-white">Resumé de votre demande</h4>
+
+            <div class="card" >
+                <div class="card-block">
+                    <h5 class="card-title">Service</h5>
+                    <p class="card-text">Maintenance et reparation climatiseur</p>
+                </div>
             </div>
 
+            <div class="card text-center" >
+                <div class="card-block">
+                    <h5 class="card-title">Pack</h5>
+                    <p class="card-text">hna ghaykon lpack li tkhtar</p>
+                </div>
+            </div>
 
+            <div class="card text-left" style="padding-left: 10px;" >
+                <div class="card-block">
+                    <h5 class="card-title">Inclus:</h5>
+                    <p class="card-text">+Filter Cleaning <br>+ Vent cleaning <br>+water tray cleaning<br>+Drain pipe flushing<br>+Gas refill</p>
+                </div>
+            </div>
+
+            <div class="pricing">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Sous total:
+                        </div>
+                        <div class="col-sm-6">
+                            1542DHs
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            TOTAL
+                        </div>
+                        <div class="col-sm-6">
+                            1600DH
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
+    </div>
 
-        <!-- Javascript -->
-        <script src="../../ressources/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="../../ressources/assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../../ressources/assets/js/jquery.backstretch.min.js"></script>
-        <script src="../../ressources/assets/js/retina-1.1.0.min.js"></script>
-        <script src="../../ressources/assets/js/scripts.js"></script>
-        <script src="../../ressources/vendor/jquery/jquery.min.js"></script>
-        <script src="../../ressources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <script src="../../ressources/js/jquery.datetimepicker.full.js"></script>
-        <script>
-            $("#datetimepicker").datetimepicker();
-        </script>
+</div>
 
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-          <![endif]-->
+</div>
 
-    </body>
 
-</html>
+
+</div>
+
+<!-- Javascript -->
+<script src="../../ressources/assets/js/jquery-1.11.1.min.js"></script>
+<script src="../../ressources/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../ressources/assets/js/jquery.backstretch.min.js"></script>
+<script src="../../ressources/assets/js/retina-1.1.0.min.js"></script>
+<script src="../../ressources/assets/js/scripts.js"></script>
+<script src="../../ressources/vendor/jquery/jquery.min.js"></script>
+<script src="../../ressources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="../../ressources/js/jquery.datetimepicker.full.js"></script>
+<script>
+    $("#datetimepicker").datetimepicker();
+</script>
+
+            <!--[if lt IE 10]>
+                <script src="assets/js/placeholder.js"></script>
+            <![endif]-->
+
+        </body>
+
+        </html>

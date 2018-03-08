@@ -220,8 +220,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded" src="../../ressources/images/logo1.png" alt="">
+                <div class="col-lg-6" style="margin-top:20px;margin-bottom: 20px">
+                    <img class="img-fluid rounded" src="../../ressources/images/smartServices.png" alt="">
                 </div>
             </div>
         </div>
@@ -237,26 +237,9 @@
 
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-
-        <div class="container">
-            <div class="m-0 text-center text-white" >
-                <a class="navbar-brand" href="index.html">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                            <div class="front">
-                                <img style="float: center;position: center;" src="../../ressources/images/logo.png" class="front" height="50px" width="50px">
-                            </div>
-                            <div class="back">
-                                <!-- back content -->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <?php 
+       include_once '../menu/footer.html';
+       ?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="../../ressources/vendor/jquery/jquery.min.js"></script>
